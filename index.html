@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ildanHouse - Премиум жилой комплекс в Ташкенте</title>
+    <meta name="description" content="Премиальный жилой комплекс в самом сердце Ташкента. Живите в будущем уже сегодня.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <span>iH</span>
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-name">ildanHouse</div>
+                        <div class="logo-tagline">Premium Living</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#about" class="nav-link">О комплексе</a>
+                    <a href="#floor-selector" class="nav-link">Квартиры</a>
+                    <a href="#gallery" class="nav-link">Галерея</a>
+                    <a href="#calculator" class="nav-link">Ипотека</a>
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </nav>
+
+                <!-- Contact Info -->
+                <a href="tel:+998909094118" class="header-contact">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <div>
+                        <div class="contact-label" style="color: white;">Звоните</div>
+
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="#about" class="nav-link-mobile">О комплексе</a>
+                <a href="#floor-selector" class="nav-link-mobile">Квартиры</a>
+                <a href="#gallery" class="nav-link-mobile">Галерея</a>
+                <a href="#calculator" class="nav-link-mobile">Ипотека</a>
+                <a href="#contacts" class="nav-link-mobile">Контакты</a>
+                <a href="tel:+998909094118" class="mobile-contact">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    +998 (90) 909-41-18
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <span>Новый премиум комплекс в центре</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="title-line-1">Живите</span>
+                        <span class="title-line-2">в будущем</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Архитектура нового поколения. Умные технологии. 
+                        Премиальный комфорт в каждой детали.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('floor-selector')">
+                            Выбрать квартиру
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('calculator')">
+                            <svg width="20" height="20" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+                            Виртуальный тур
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="building-card">
+                        <div class="building-img">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070" alt="ildanHouse">
+                        </div>
+                        <div class="building-stats">
+                            <div class="stat-card">
+                                <div class="stat-value">19</div>
+                                <div class="stat-label">Этажей</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">180+</div>
+                                <div class="stat-label">Квартир</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">3.2м</div>
+                                <div class="stat-label">Потолки</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </div>
+                    <div class="stat-value">95%</div>
+                    <div class="stat-label">Квартир уже продано</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div class="stat-value">500+</div>
+                    <div class="stat-label">Довольных семей</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <div class="stat-value">15+</div>
+                    <div class="stat-label">Наград и премий</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <div class="stat-value">2025</div>
+                    <div class="stat-label">Сдача объекта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about">
+        <div class="section-bg">
+            <div class="orb orb-4"></div>
+            <div class="orb orb-5"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Преимущества</div>
+                <h2 class="section-title">
+                    <span>Почему выбирают</span>
+                    <span class="gradient-text">ildanHouse</span>
+                </h2>
+                <p class="section-description">
+                    Революционный жилой комплекс, где технологии встречаются с комфортом
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon gradient-1">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h3 class="feature-title">Футуристичная архитектура</h3>
+                    <p class="feature-description">Проект от международных архитекторов. Здание будущего уже сегодня.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gradient-2">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="feature-title">Безопасность 24/7</h3>
+                    <p class="feature-description">AI-система безопасности с распознаванием лиц и круглосуточной охраной.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gradient-3">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    </div>
+                    <h3 class="feature-title">Зеленый оазис</h3>
+                    <p class="feature-description">Собственный парк с тропическими растениями и зонами для медитации.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gradient-4">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </div>
+                    <h3 class="feature-title">Smart паркинг</h3>
+                    <p class="feature-description">Автоматизированный паркинг с зарядками для электромобилей.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gradient-5">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                    </div>
+                    <h3 class="feature-title">Премиум отделка</h3>
+                    <p class="feature-description">Дизайнерская отделка от ведущих европейских брендов.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gradient-6">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h3 class="feature-title">Умный дом</h3>
+                    <p class="feature-description">Система Smart Home управляет всеми системами квартиры.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gradient-7">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h3 class="feature-title">Панорамные окна</h3>
+                    <p class="feature-description">Французские окна от пола до потолка с видом на город.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gradient-8">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                    </div>
+                    <h3 class="feature-title">Гигабитный интернет</h3>
+                    <p class="feature-description">Оптоволоконный интернет до 1 Гбит/с в каждой квартире.</p>
+                </div>
+            </div>
+
+            <div class="cta-card">
+                <div class="cta-pattern"></div>
+                <div class="cta-content">
+                    <h3>Готовы к жизни в будущем?</h3>
+                    <p>Забронируйте квартиру мечты прямо сейчас и получите специальное предложение</p>
+                    <button class="btn btn-white" onclick="scrollToSection('contacts')">Записаться на просмотр</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Selector Section -->
+    <section id="floor-selector">
+        <div class="section-bg">
+            <div class="orb orb-6"></div>
+            <div class="orb orb-7"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Интерактивный выбор</div>
+                <h2 class="section-title">
+                    <span>Выберите</span>
+                    <span class="gradient-text">идеальный этаж</span>
+                </h2>
+                <p class="section-description">
+                    3D-визуализация здания для удобного выбора квартиры
+                </p>
+            </div>
+
+            <div class="floor-selector-grid">
+                <div class="building-visualization" id="buildingViz">
+                    <svg class="building-svg" viewBox="0 0 734 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="buildingPattern" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <image href="img/home.png" x="0" y="0" width="1" height="1"  preserveAspectRatio="xMidYMid slice"/>
+                            </pattern>
+                            <linearGradient id="floorGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#d946ef;stop-opacity:0.8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="734" height="640" fill="url(#buildingPattern)" />
+                        
+                        <!-- Floors будут добавлены через JS, начиная с 1 этажа -->
+                    </svg>
+                    
+                    <div class="floor-label" id="floorLabel">
+                        <div class="floor-label-title">Этаж</div>
+                        <div class="floor-label-number">01</div>
+                    </div>
+                </div>
+
+                <div class="floor-controls">
+                    <div class="controls-card">
+                        <h3>Навигация</h3>
+                        
+                        <div class="floor-counter">
+                            <button class="floor-btn" id="floorUp">
+                                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"></path></svg>
+                            </button>
+                            <div class="floor-display">
+                                <div class="floor-number" id="floorNumber">01</div>
+                                <div class="floor-text">этаж</div>
+                            </div>
+                            <button class="floor-btn" id="floorDown">
+                                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+                            </button>
+                        </div>
+
+                        <button class="btn btn-primary btn-full" id="viewFlatsBtn">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            Смотреть планировки
+                        </button>
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-value">8-12</div>
+                            <div class="info-label">Квартир на этаже</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-value">3.2м</div>
+                            <div class="info-label">Высота потолков</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="section-bg">
+            <div class="orb orb-8"></div>
+            <div class="orb orb-9"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Галерея</div>
+                <h2 class="section-title">
+                    <span>Взгляните на</span>
+                    <span class="gradient-text">ваше будущее</span>
+                </h2>
+                <p class="section-description">
+                    Реальные фотографии комплекса и квартир
+                </p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="exterior">Экстерьер</button>
+                <button class="filter-btn" data-category="interior">Интерьер</button>
+                <button class="filter-btn" data-category="infrastructure">Инфраструктура</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator">
+        <div class="section-bg">
+            <div class="orb orb-10"></div>
+            <div class="orb orb-11"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="calculator-icon">
+                    <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="8" y1="10" x2="16" y2="10"></line><line x1="8" y1="14" x2="16" y2="14"></line><line x1="8" y1="18" x2="16" y2="18"></line></svg>
+                </div>
+                <h2 class="section-title">
+                    <span>Калькулятор</span>
+                    <span class="gradient-text">ипотеки</span>
+                </h2>
+                <p class="section-description">
+                    Рассчитайте ежемесячный платеж за считанные секунды
+                </p>
+            </div>
+
+            <div class="calculator-grid">
+                <div class="calculator-form">
+                    <div class="calculator-card">
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label>Стоимость квартиры</label>
+                                <span class="slider-value" id="priceValue">900 млн сум</span>
+                            </div>
+                            <input type="range" id="priceSlider" min="300000000" max="3000000000" step="10000000" value="900000000" class="slider">
+                            <div class="slider-labels">
+                                <span>300 млн</span>
+                                <span>3 млрд</span>
+                            </div>
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label>Первоначальный взнос</label>
+                                <span class="slider-value" id="initialValue">180 млн (20%)</span>
+                            </div>
+                            <input type="range" id="initialSlider" min="0" max="900000000" step="10000000" value="180000000" class="slider">
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span id="initialMax">900 млн</span>
+                            </div>
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label>Срок кредита</label>
+                                <span class="slider-value" id="termValue">15 лет</span>
+                            </div>
+                            <input type="range" id="termSlider" min="1" max="30" step="1" value="15" class="slider">
+                            <div class="slider-labels">
+                                <span>1 год</span>
+                                <span>30 лет</span>
+                            </div>
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label>Процентная ставка</label>
+                                <span class="slider-value" id="rateValue">18%</span>
+                            </div>
+                            <input type="range" id="rateSlider" min="10" max="25" step="0.5" value="18" class="slider">
+                            <div class="slider-labels">
+                                <span>10%</span>
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-results">
+                    <div class="result-main">
+                        <div class="result-header">
+                            <div>
+                                <div class="result-label">Ежемесячный платеж</div>
+                                <div class="result-value" id="monthlyPayment">8.5 млн</div>
+                                <div class="result-unit">сум в месяц</div>
+                            </div>
+                            <div class="result-icon">
+                                <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-cards">
+                        <div class="result-card">
+                            <div class="result-card-header">
+                                <div class="result-card-icon">
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                </div>
+                                <div class="result-card-label">Общая сумма выплат</div>
+                            </div>
+                            <div class="result-card-value" id="totalAmount">1620 млн сум</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-card-header">
+                                <div class="result-card-icon">
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                </div>
+                                <div class="result-card-label">Переплата</div>
+                            </div>
+                            <div class="result-card-value" id="overpayment">900 млн сум</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-card-header">
+                                <div class="result-card-icon">
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="8" y1="10" x2="16" y2="10"></line></svg>
+                                </div>
+                                <div class="result-card-label">Сумма кредита</div>
+                            </div>
+                            <div class="result-card-value" id="loanAmount">720 млн сум</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contacts')">
+                        Получить одобрение ипотеки
+                    </button>
+                </div>
+            </div>
+
+            <div class="banks-card">
+                <h3>Банки-партнеры</h3>
+                <div class="banks-grid">
+                    <div class="bank-item">
+                        <div class="bank-name">Ipoteka Bank</div>
+                        <div class="bank-rate">от 16%</div>
+                    </div>
+                    <div class="bank-item">
+                        <div class="bank-name">Uzbek Industrial</div>
+                        <div class="bank-rate">от 17%</div>
+                    </div>
+                    <div class="bank-item">
+                        <div class="bank-name">Agrobank</div>
+                        <div class="bank-rate">от 18%</div>
+                    </div>
+                    <div class="bank-item">
+                        <div class="bank-name">Xalq Banki</div>
+                        <div class="bank-rate">от 19%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Contacts Section -->
+    <section id="contacts">
+        <div class="section-bg">
+            <div class="orb orb-12"></div>
+            <div class="orb orb-13"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Контакты</div>
+                <h2 class="section-title">
+                    <span>Свяжитесь</span>
+                    <span class="gradient-text">с нами</span>
+                </h2>
+                <p class="section-description">
+                    Мы ответим на все ваши вопросы
+                </p>
+            </div>
+
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon gradient-1">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Телефон</div>
+                                <a href="tel:+998909094118" class="contact-value">+998 (90) 909-41-18</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon gradient-2">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <a href="mailto:info@ildanhouse.uz" class="contact-value">info@ildanhouse.uz</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon gradient-3">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Адрес</div>
+                                <div class="contact-value">г. Ташкент, Юнусабадский район</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon gradient-4">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Время работы</div>
+                                <div class="contact-value">Пн-Вс: 9:00 - 21:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div class="map-title">Наше местоположение</div>
+                        <div class="map-subtitle">Юнусабадский район, Ташкент</div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label>Ваше имя *</label>
+                            <input type="text" name="name" required placeholder="Введите ваше имя">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Телефон *</label>
+                            <input type="tel" name="phone" required placeholder="+998 (90) 123-45-67">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="example@mail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Сообщение</label>
+                            <textarea name="message" rows="4" placeholder="Расскажите о ваших пожеланиях..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            Отправить заявку
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">
+                            <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <h3>Спасибо!</h3>
+                        <p>Ваша заявка успешно отправлена.<br>Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-bg">
+            <div class="orb orb-14"></div>
+            <div class="orb orb-15"></div>
+        </div>
+
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>iH</span>
+                        </div>
+                        <div class="logo-text">
+                            <div class="logo-name">ildanHouse</div>
+                            <div class="logo-tagline">Premium Living</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Премиальный жилой комплекс в самом сердце Ташкента. Живите в будущем уже сегодня.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <a href="#about">О комплексе</a>
+                    <a href="#floor-selector">Квартиры</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#calculator">Калькулятор</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <a href="tel:+998909094118">+998 (90) 909-41-18</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:info@ildanhouse.uz">info@ildanhouse.uz</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>г. Ташкент, Юнусабадский район</span>
+                    </div>
+                </div>
+
+                <div class="footer-cta">
+                    <h3>Время работы</h3>
+                    <div class="working-hours">
+                        <div>
+                            <span>Понедельник - Пятница</span>
+                            <strong>9:00 - 21:00</strong>
+                        </div>
+                        <div>
+                            <span>Суббота - Воскресенье</span>
+                            <strong>10:00 - 20:00</strong>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contacts')">
+                        Записаться на просмотр
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 ildanHouse. Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floor Modal -->
+    <div class="modal" id="floorModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <button class="modal-back" id="modalBack" style="display: none;">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <div>
+                        <h2 class="modal-title" id="modalTitle">Этаж 01</h2>
+                        <p class="modal-subtitle" id="modalSubtitle">Жилые квартиры</p>
+                    </div>
+                </div>
+                <button class="modal-close" id="modalClose">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-plan">
+                    <div class="plan-container" id="planContainer">
+                        <!-- SVG plan будет добавлен через JS -->
+                    </div>
+                    <div class="plan-legend">
+                        <div class="legend-item">
+                            <div class="legend-color available"></div>
+                            <span>Доступно</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color sold"></div>
+                            <span>Продано</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color selected"></div>
+                            <span>Выбрано</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-sidebar" id="modalSidebar">
+                    <!-- Content будет добавлен через JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
+        </button>
+        <button class="lightbox-nav lightbox-next">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-info">
+                <div class="lightbox-category" id="lightboxCategory"></div>
+                <div class="lightbox-title" id="lightboxTitle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare Bar -->
+    <div class="compare-bar" id="compareBar" style="display: none;">
+        <div class="compare-bar-content">
+            <div class="compare-bar-left">
+                <div class="compare-count">
+                    <div class="compare-badge" id="compareCount">0</div>
+                    <span>квартиры выбраны для сравнения</span>
+                </div>
+                <button class="compare-clear" id="compareClear">Очистить все</button>
+            </div>
+            <button class="btn btn-white" id="compareBtn">Сравнить сейчас</button>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
